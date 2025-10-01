@@ -70,18 +70,6 @@ Invalid Grade Handling – Ensures invalid grades raise ValueError.
 
 No Courses GPA – Ensures GPA returns 0.0 if a student has no courses.
 
-**7.UML Class Diagram**
-+-------------------+        +-------------------+        +-------------------+
-|     Student       |        |      Course       |        |       Grade       |
-+-------------------+        +-------------------+        +-------------------+
-| - name: str       |        | - course_code: str|        | - course: Course  |
-| - student_id: str |        | - course_name: str|        | - grade_value: str|
-| - courses: list   |        | - credits: int    |        +-------------------+
-+-------------------+        +-------------------+        | + get_grade_point()|
-| + enroll(grade)   |                                      +-------------------+
-| + calculate_gpa() |
-| + get_transcript()|
-+-------------------+
 
 **Learning Outcomes**
 
